@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章详细</title>
+</head>
+<body>
+{% for po in post %}
+    {{ po.title }}<br><br>
+    Auther:{{ po.author }}<br><br>
+    pubtime:{{ po.published_date }}<br><br>
+    {{ po.text }}
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章列表</title>
+</head>
+<body>
+{% for post in posts %}
+   <tr>
+       <th>
+           <a href="{% url 'detail' post.id %}">{{ post.title }}</a><br><br>
+       </th>
+   </tr>
+{% endfor %}
+
+</body>
+</html>
